@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Squaring a number</title>
+</head>
+<body>
+<script>
+let number = prompt('Enter a number');
+function doubler(num){
+  return num*num;
+}
+alert('Result: '+doubler(number));
+function myFunction(){
+	document.getElementById("demo").innerHTML=doubler(number);
+  document.getElementById("func1").style.color = "green";
+  document.body.style.backgroundColor = "yellow";
+}
+</script>
+<p id="func1"><strong>The double is:</strong></p>
+<p id="demo"></p>
+
+<button onclick="myFunction()">
+Click Here
+</button>
+
+</body>
+</html>

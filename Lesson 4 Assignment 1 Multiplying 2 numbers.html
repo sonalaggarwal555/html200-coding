@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Multiplication of two numbers</title>
+</head>
+<body id="func">
+
+<script>
+let num1 = prompt('Enter number1');
+let num2 = prompt('Enter number2');
+function multiplication(a,b){
+  let result = a*b;
+  alert('Result :'+result);
+  return result;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = multiplication(num1,num2);
+  document.getElementById("func").style.backgroundColor = "lightblue";
+}
+</script>
+
+<button onclick="myFunction()">Click here</button>
+<p>Result is :</p>
+<p id="demo"></p>
+
+</body>
+</html>
