@@ -5,12 +5,14 @@
 </head>
 <body>
 <script>
-let number = prompt('Enter a number');
+
 function doubler(num){
   return num*num;
 }
-alert('Result: '+doubler(number));
+
 function myFunction(){
+  let number = prompt('Enter a number');
+  alert('Result: '+doubler(number));
 	document.getElementById("demo").innerHTML=doubler(number);
   document.getElementById("func1").style.color = "green";
   document.body.style.backgroundColor = "yellow";
