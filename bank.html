@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bank Application</title>
+    <link rel="stylesheet" type="text/css" href="bank.css"/>
+    <script src="bank.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <section id="section">
+      <div>Enter a variable to perform an action(D=Deposit,W=Withdraw,B=Balance,Q=Quit)</div><br/>
+      <div><input id="Option" type="text" value=""></div><br/>
+      <div><button onclick="Options()" class="btn">OK</button></div>
+      </section>
+      <!-- Deposit -->
+      <div id="section-1">
+        <p>Add Amount
+        <input id="creditAmt" type="number">
+        </p>
+        <button onclick="creditAmount()">Deposit Amount</button><br/>
+        <p id="newBalance"></p>
+      </div>
+      <div id="section-2">
+        <p>Enter Amount to Withdraw
+        <input type="number" id="debitAmt"></p>
+        <button onclick="debitAmount()">Withdraw Amount</button>
+        <p id="total"></p>
+      </div>
+      <div id="section-3">
+        <p id="balance"></p>
+      </div>
+      <div id="section-4">
+        <p>You have exited the application!Please signin to continue..</p>
+        <button onclick="initAll()">Signin</button>
+      </div>
+    </div>
+  </body>
+</html>
